@@ -1,17 +1,12 @@
 # rive_mask_backdrop_bug
 
-A new Flutter project.
+A simple Flutter project to demonstrate an issue with Rive assets with more than one clipping mask.
+This issue only affects Impeller rendering in Flutter 3.19 and Impeller is only active on iOS per
+default so it only affects iOS in the current state.
 
-## Getting Started
+I've logged an issue in the rive repo: https://github.com/rive-app/rive-flutter/issues/360
 
-This project is a starting point for a Flutter application.
+But I'm not sure if the problem is with Rive or with the new Flutter optimization of BackdropFilter
+in Flutter 3.19.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# rive_mask_backdrop_bug
+This error is also present in Flutter 3.19.1.
